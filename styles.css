@@ -1,3 +1,4 @@
+/*GENERAL*/
 body{
   padding: 0;
   margin: 0;
@@ -10,6 +11,7 @@ body{
   display: block;
   width:100% ;
 }
+/*NAVBAR*/
 nav {
   position: fixed;
   z-index: 10;
@@ -19,7 +21,7 @@ nav {
   font-family: Montserrat,sans-serif;
   padding: 0 5%;
   height: 100px;
-  background-color: #3e65da;
+  background-color: green;
 }
 nav .logo {
   float: left;
@@ -29,6 +31,9 @@ nav .logo {
   align-items: center;
   font-size: 24px;
   color: white;
+  text-transform: uppercase;
+  font-family: serif;
+  font-weight: bold;
 }
 nav .links {
   float: right;
@@ -52,6 +57,17 @@ nav .links a {
   text-decoration: none;
   background-color: rgba(0, 0, 0, .10);
 }
+nav .links a:hover {
+  background: #1b9bff;
+  bottom: 0;
+  transition: 0.5s;
+
+}
+nav .links a:active {
+  background:#1b9bff;
+  
+}
+
 #nav-toggle {
   position: absolute;
   top: -100%;
@@ -72,6 +88,7 @@ nav .icon-burger .line {
   border-radius: 3px;
   transition: all .3s ease-in-out;
 }
+
 @media screen and (max-width: 768px){
   nav .logo{
     float: none;
@@ -121,3 +138,4 @@ nav .icon-burger .line {
    
   
 }
+/*SLIDER*/
